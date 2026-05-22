@@ -264,7 +264,7 @@ EOF
 
 # ── Fix permissions ──
 chown -R 1000:1000 /home/mittens
-chmod 600 /evidence/stolen_creds.txt 2>/dev/null
+chmod 600 /evidence/CLASSIFIED.txt 2>/dev/null
 chmod 700 /evidence/reconstruction
 chmod +x /home/mittens/Downloads/team-cat-photo.gif.exe
 

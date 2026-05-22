@@ -6,7 +6,7 @@ services:
     container_name: dead-laptop
     hostname: dead-laptop.oss.local
     ports:
-      - "2224:22"
+      - "1337:22"
     volumes:
       - flags:/flags
     networks:

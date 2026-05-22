@@ -14,8 +14,9 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /var/run/sshd
-RUN useradd -m -s /bin/bash player
-RUN echo 'player:playercatctf' | chpasswd
+RUN useradd -m -s /bin/bash player && \
+    useradd -m -s /bin/bash mittens && \
+    echo 'player:playercatctf' | chpasswd
 
 COPY init/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
