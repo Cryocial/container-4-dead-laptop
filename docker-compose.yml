@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  dead-laptop:
+    build: .
+    container_name: dead-laptop
+    hostname: dead-laptop.oss.local
+    ports:
+      - "2224:22"
+    volumes:
+      - flags:/flags
+    networks:
+      oss-internal:
+        ipv4_address: 172.20.0.40
+    restart: unless-stopped
+
+volumes:
+  flags:
+
+networks:
+  oss-internal:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
