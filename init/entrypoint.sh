@@ -260,7 +260,7 @@ DAY 2  04:13 — Webshell deployed on scratching-post server
 DAY 3  02:00 — Redis RCE on litter-box server
 DAY 11 03:47 — TOMCAT beacon detected, investigation begins
 
-OSS{B4_C10_PURRING_PROTOCOL}
+OSS{B4_C10_ITS_NOT_OVER}
 EOF
 
 # ── Fix permissions ──
