@@ -1,16 +1,13 @@
 # Container 04 — The Dead Developer's Laptop
 **Hostname:** dead-laptop.oss.local
-**IP:** 172.20.0.40
-**SSH:** localhost:2224 (forensic only)
+**SSH:** localhost:1337 (forensic only)
 **Services:** No live services — artifacts only
-
-## Story
-On Day 0 at 11:23 PM, @mittens_dev received a phishing email
-from noreply@open-source-strays.net. The attachment was named
-team-cat-photo.gif.exe. This is where TOMCAT entered.
 
 ## Deploy
 docker compose up --build
+
+## Take Down
+docker compose down
 
 ## Reset
 ./reset.sh
@@ -27,4 +24,4 @@ docker compose up --build
 | C07 | The Cat Carrier | Suspicious archive extraction
 | C08 | Crying Wolf or Cat | Fake AV alert triage
 | C09 | Stolen Tags | Credential theft evidence
-| C10 | The Purring Protocol | Full Day 0-11 timeline
+| C10 | The Purring Protocol | Full timeline
