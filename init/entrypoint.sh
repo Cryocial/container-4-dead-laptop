@@ -66,7 +66,7 @@ with open('/home/mittens/Downloads/team-cat-photo.gif.exe', 'wb') as f:
 cat > /var/log/artifacts/dmesg.log <<EOF
 [123.456] usb 1-1: new high-speed USB device number 2 using xhci_hcd
 [123.789] usb 1-1: New USB device found, idVendor=0951, idProduct=1666
-[123.790] usb 1-1: SerialNumber: OSS{B4_C04_STRAY_DEVICE}
+[123.790] usb 1-1: SerialNumber: OSS{B4_C04_STRAY [TRUNCATED - buffer overflow]
 [123.791] usb-storage 1-1:1.0: USB Mass Storage device detected
 [123.792] sd 0:0:0:0: [sdb] Attached SCSI removable disk
 [123.793] EXT4-fs (sdb1): mounted filesystem with label CatPhotos
@@ -77,6 +77,7 @@ cat > /media/mittens/CatPhotos/autorun.inf <<EOF
 open=payload.exe
 icon=cat.ico
 label=CatPhotos
+serial= _DEVICE}
 EOF
 
 cat > /media/mittens/CatPhotos/readme.txt <<EOF
