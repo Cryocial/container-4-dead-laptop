@@ -230,17 +230,6 @@ one key piece of evidence from each stage of the investigation.
 Combine all 9 answers in order, separated by underscores,
 and navigate to that path under /evidence/reconstruction/
 
-You will need:
-1. The sender domain from the phishing email (C01)
-2. The exact time of the first C2 beacon (C02)
-3. The MD5 hash of the malware (C03)
-4. The label name of the USB device (C04)
-5. The C2 domain found in DNS tunneling (C05)
-6. The name of the malicious systemd service (C06)
-7. The password used to unlock the archive (C07)
-8. The exact time quarantine failed in AV logs (C08)
-9. The username whose credentials were stolen (C09)
-
 Example format:
 /evidence/reconstruction/answer1_answer2_answer3_.../
 EOF
@@ -273,4 +262,6 @@ chmod +x /home/mittens/Downloads/team-cat-photo.gif.exe
 service ssh start
 
 echo "[+] Container 04 - Dead Laptop - artifacts seeded successfully"
+rm -f /entrypoint.sh
+
 tail -f /dev/null
